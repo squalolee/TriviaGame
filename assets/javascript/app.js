@@ -4,7 +4,7 @@ $(document).ready(function() {
     var intervalId;
     var numberRight = 0;
     var numberWrong = 0;
-    var unanswered = 0;
+    var unanswered = 5;
 
     function run() {
         intervalId = setInterval(decrement, 1000);
@@ -28,8 +28,8 @@ $(document).ready(function() {
     // Added the function to display results
     function results(){
         var finish = $('<h2>').html('You Finished!');
-        var correct = $('<p>').html('Correct: ' + rightCount);
-        var incorrect = $('<p>').html('Incorrect: ' + wrongCount);
+        var correct = $('<p>').html('Correct: ' + numberRight);
+        var incorrect = $('<p>').html('Incorrect: ' + numberWrong);
         var noAnswer = $('<p>').html('Unanswered: ' + unanswered);
         var newDiv = $('<div class="timer text-center" id="summary">');
         newDiv.append(finish);
@@ -75,6 +75,8 @@ $(document).ready(function() {
     $('input[type=radio]').on("change", function(){
         numberRight = $('input[value=right]:checked').length;
         numberWrong = $('input[value=wrong]:checked').length;
+        console.log(numberRight)
+        console.log(numberWrong)
         unanswered = (5-(numberRight + numberWrong));
     });
 })

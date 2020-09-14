@@ -1,0 +1,26 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background: url(../images/bkgrnd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 960px;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.jumbotron {
+    background-color: orange;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.done-btn {
+    padding-bottom: 20px;
+}
