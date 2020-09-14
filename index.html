@@ -1,11 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia Game</title>
+  <meta charset="UTF-8">
+  <title>Video Game Trivia!</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="top">
+            <div class="jumbotron text-center">
+                <h1>Totally Trivial Trivia!!!</h1>
+            </div>
+        </div>
+        <br>
+        <div class="top">
+            <div class="start-btn text-center">
+                <button type="button" class="btn btn-primary btn-lg btn-center" id="start">Start</button>
+            </div>
+
+            <div class="timer text-center">
+                <h3 id="time">Time Remaining: <span id="timer"></span></h3>
+            </div>
+        </div>
+        <br>
+        <div class="quiz">
+
+            <div class="q1 form-group text-center">
+
+                <p><strong>What was the first game released?</strong></p>
+
+                <form class="question">
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" class="optradio" value="right">
+                        Pong
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" class="optradio" value="wrong">
+                        Tetris
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" class="optradio" value="wrong">
+                        Mortal Kombat 
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" class="optradio" value="wrong">
+                        Mario
+                    </label>
+                </form>
+            </div> 
+        </div>
+
+        </div>
+
+        <div class="top">
+            <div class="done-btn text-center">
+                <button type="button" class="btn btn-primary btn-lg btn-center" id="done">Done</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
