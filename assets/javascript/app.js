@@ -25,6 +25,20 @@ $(document).ready(function() {
         stop();
     });
 
+    // Added the function to display results
+    function results(){
+        var finish = $('<h2>').html('You Finished!');
+        var correct = $('<p>').html('Correct: ' + rightCount);
+        var incorrect = $('<p>').html('Incorrect: ' + wrongCount);
+        var noAnswer = $('<p>').html('Unanswered: ' + unanswered);
+        var newDiv = $('<div class="timer text-center" id="summary">');
+        newDiv.append(finish);
+        newDiv.append(correct);
+        newDiv.append(incorrect);
+        newDiv.append(noAnswer);
+        $('.top:nth(2)').append(newDiv);
+    }
+
     // Fuction for the timer dispaly and ticking away each second
     function decrement(){
         timer--;
